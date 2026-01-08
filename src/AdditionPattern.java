@@ -13,15 +13,13 @@ public class AdditionPattern {
         return num;
     }
 
-    public int next() {
+    public void next() {
         num += pattern;
-        return num;
     }
 
-    public int prev() {
+    public void prev() {
         if (num != start) {
             num -= pattern;
         }
-        return num;
     }
 }
