@@ -1,6 +1,7 @@
 public class CupcakeMachine {
     private int stock;
     private double cost;
+    private int num = 1;
 
     public CupcakeMachine(int s, double c) {
         stock = s;
@@ -8,6 +9,24 @@ public class CupcakeMachine {
     }
 
     public String takeOrder(int order) {
-        return "orderinfo";
+        if (order <= stock) {
+            num ++;
+            stock -= order;
+            return "Order number " + (num - 1) + ", cost $" + order * cost;
+        } else {
+            return "Order cannot be filled";
+        }
+    }
+
+    public int getAvailCupcakes() {
+        return stock;
+    }
+
+    public double getCupcakeCost() {
+        return cost;
+    }
+
+    public int getOrderNum() {
+        return num;
     }
 }
