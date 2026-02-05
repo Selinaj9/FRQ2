@@ -1,21 +1,59 @@
 public class Main {
     public static void main(String[] args) {
-        System.out.println("--- test 1 ---");
-        HiddenWord puzzle = new HiddenWord("HARPS");
-        System.out.println(puzzle.getHint("AAAAA"));
-        System.out.println(puzzle.getHint("HELLO"));
-        System.out.println(puzzle.getHint("HEART"));
-        System.out.println(puzzle.getHint("HARMS"));
-        System.out.println(puzzle.getHint("HARPS"));
-        System.out.println("--- test 2 ---");
-        puzzle = new HiddenWord("TANGERINE");
-        System.out.println(puzzle.getHint("EXPERTISE"));
-        System.out.println(puzzle.getHint("PARALYZED"));
-        System.out.println(puzzle.getHint("LIFEHACKS"));
-        System.out.println(puzzle.getHint("ERINETANG"));
-        System.out.println(puzzle.getHint("NNNNNNNNN"));
-        System.out.println(puzzle.getHint("LLLLLLLLL"));
-        System.out.println(puzzle.getHint("TYNGEREIN"));
-        System.out.println(puzzle.getHint("TANGERINE"));
+        boolean possible;
+        System.out.println("---- Car 1 Tests ----");
+        Car carOne = new Car(10.0, 30.0);
+        System.out.println(carOne.getCurrentFuel() + "  " + carOne.getMpg());
+        possible = carOne.canMakeTrip(120.0);
+        System.out.println(possible);
+        System.out.println(carOne.getCurrentFuel() + "  " + carOne.getMpg());
+        possible = carOne.canMakeTrip(90.0);
+        System.out.println(possible);
+        System.out.println(carOne.getCurrentFuel() + "  " + carOne.getMpg());
+        possible = carOne.canMakeTrip(225.0);
+        System.out.println(possible);
+        System.out.println(carOne.getCurrentFuel() + "  " + carOne.getMpg());
+        System.out.println();
+
+
+        System.out.println("---- Car 2 Tests ----");
+        Car carTwo = new Car(12.0, 15.0);
+        System.out.println(carTwo.getCurrentFuel() + "  " + carTwo.getMpg());
+        possible = carTwo.canMakeTrip(300.0);
+        System.out.println(possible);
+        System.out.println(carTwo.getCurrentFuel() + "  " + carTwo.getMpg());
+        possible = carTwo.canMakeTrip(180.0);
+        System.out.println(possible);
+        System.out.println(carTwo.getCurrentFuel() + "  " + carTwo.getMpg());
+        possible = carTwo.canMakeTrip(10.0);
+        System.out.println(possible);
+        System.out.println(carTwo.getCurrentFuel() + "  " + carTwo.getMpg());
+        System.out.println();
+
+
+        System.out.println("---- Car 3 Tests ----");
+        Car carThree = new Car(32.0, 25.0);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(810);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(150.0);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(150.0);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(150.0);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(150.0);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(150.0);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
+        possible = carThree.canMakeTrip(150.0);
+        System.out.println(possible);
+        System.out.println(carThree.getCurrentFuel() + "  " + carThree.getMpg());
     }
 }
